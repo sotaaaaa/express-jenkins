@@ -9,7 +9,7 @@ pipeline {
     stages {
             stage('Building Docker Image') {
                 steps {
-                    sh "sudo docker build -t $registry:$BUILD_NUMBER"
+                    sh "docker build -t $registry:$BUILD_NUMBER"
                 }
             }
 
